@@ -7,7 +7,7 @@ from .workflow import TextWorkflow
 
 
 def main():
-    parser = argparse.ArgumentParser(description="本地教研文本处理工具")
+    parser = argparse.ArgumentParser(description="备课对话及教材依据记录工具")
     parser.add_argument("action", choices=("ingest", "list"))
     parser.add_argument("path", nargs="?", default="fixtures/records.json")
     parser.add_argument("--state", default="var/records.json")

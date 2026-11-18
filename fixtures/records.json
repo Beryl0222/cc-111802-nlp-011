@@ -1,18 +1,46 @@
 [
   {
-    "record_id": "school-policy-entity-events-lesson-a",
+    "record_id": "lesson-a-turn-01",
+    "conversation_id": "lesson-a",
+    "turn_id": "01",
+    "role": "user",
     "source": "school-synthetic",
     "revision": 1,
     "observed_at": "2026-11-18T09:00:00Z",
-    "text": "校务通知事件提取台需要保留通知事件和原文依据。",
-    "context": "教研演练"
+    "text": "请根据教材中的例题整理一份分层作业，并保留各题依据。",
+    "context": "八年级数学备课",
+    "task_id": "math-lesson-a",
+    "source_document": "algebra-textbook",
+    "source_revision": 3
   },
   {
-    "record_id": "school-policy-entity-events-lesson-b",
+    "record_id": "lesson-a-turn-02",
+    "conversation_id": "lesson-a",
+    "turn_id": "02",
+    "role": "assistant",
     "source": "school-synthetic",
     "revision": 1,
-    "observed_at": "2026-11-18T09:05:00Z",
-    "text": "教师复核通知事件时应查看课程语境。",
-    "context": "课堂练习"
+    "observed_at": "2026-11-18T09:00:18Z",
+    "text": "基础题沿用教材例题中的等式关系，进阶题增加一步变形。",
+    "context": "八年级数学备课",
+    "parent_turn_id": "01",
+    "task_id": "math-lesson-a",
+    "source_document": "algebra-textbook",
+    "source_revision": 3
+  },
+  {
+    "record_id": "lesson-a-turn-03",
+    "conversation_id": "lesson-a",
+    "turn_id": "03",
+    "role": "teacher",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-18T09:02:10Z",
+    "text": "保留进阶题，基础题的已知条件改为教材原例中的数值。",
+    "context": "教师修改后的作业草稿",
+    "parent_turn_id": "02",
+    "task_id": "math-lesson-a",
+    "source_document": "algebra-textbook",
+    "source_revision": 3
   }
 ]

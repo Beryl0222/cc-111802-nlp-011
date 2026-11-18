@@ -23,8 +23,11 @@ class TextWorkflow:
         self.repository.replace(result)
         return {"received": len(incoming), "stored": len(result)}
 
-    def list_records(self, source=None):
+    def list_records(self, source=None, conversation_id=None):
         records = self.repository.read()
         if source:
             records = [record for record in records if record["source"] == source]
+        if conversation_id:
+            records = [record for record in records if record["conversation_id"] == conversation_id]
+        records.sort(key=lambda row: (row["conversation_id"], row["observed_at"], row["turn_id"]))
         return records
