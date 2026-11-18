@@ -1,0 +1,33 @@
+[
+  {
+    "kind": "turn",
+    "record_id": "lesson-c-turn-01",
+    "conversation_id": "lesson-c",
+    "turn_id": "01",
+    "role": "user",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-19T10:00:00Z",
+    "text": "请就延伸阅读出一道讨论题。",
+    "context": "七年级语文备课（导入中断）",
+    "task_id": "reading-lesson-c",
+    "source_document": "reading-textbook",
+    "source_revision": 1
+  },
+  {
+    "kind": "turn",
+    "record_id": "lesson-c-turn-03",
+    "conversation_id": "lesson-c",
+    "turn_id": "03",
+    "role": "teacher",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-19T10:02:00Z",
+    "text": "模型回复尚未收到，等补全后再核对。",
+    "context": "七年级语文备课（导入中断）",
+    "parent_turn_id": "02",
+    "task_id": "reading-lesson-c",
+    "source_document": "reading-textbook",
+    "source_revision": 1
+  }
+]

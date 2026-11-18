@@ -1,0 +1,193 @@
+[
+  {
+    "kind": "turn",
+    "record_id": "lesson-b-turn-01",
+    "conversation_id": "lesson-b",
+    "turn_id": "01",
+    "role": "user",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-19T08:30:00Z",
+    "text": "请依据课后练习设计分层作业，给出三个候选方案，并注明依据。",
+    "context": "七年级语文备课",
+    "task_id": "reading-lesson-b",
+    "source_document": "reading-textbook",
+    "source_revision": 2
+  },
+  {
+    "kind": "turn",
+    "record_id": "lesson-b-turn-02",
+    "conversation_id": "lesson-b",
+    "turn_id": "02",
+    "role": "assistant",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-19T08:30:25Z",
+    "text": "候选A：抄写课后第2题答案要点并背诵。候选B：按课后第2题把结尾改写为景物描写，不少于二百字。候选C：结合延伸阅读比较两篇结尾写短评。",
+    "context": "七年级语文备课",
+    "parent_turn_id": "01",
+    "task_id": "reading-lesson-b",
+    "source_document": "reading-textbook",
+    "source_revision": 2
+  },
+  {
+    "kind": "turn",
+    "record_id": "lesson-b-turn-03",
+    "conversation_id": "lesson-b",
+    "turn_id": "03",
+    "role": "teacher",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-11-19T08:33:00Z",
+    "text": "候选A太机械，不用。候选B可用，但题目要求以教材原题为准。候选C直接采用。",
+    "context": "七年级语文备课",
+    "parent_turn_id": "02",
+    "task_id": "reading-lesson-b",
+    "source_document": "reading-textbook",
+    "source_revision": 2
+  },
+  {
+    "kind": "candidate",
+    "candidate_id": "cand-b-a",
+    "conversation_id": "lesson-b",
+    "turn_id": "02",
+    "task_id": "reading-lesson-b",
+    "label": "候选A",
+    "text": "抄写课后第2题答案要点并背诵。",
+    "source_refs": [
+      {"document": "reading-textbook", "fragment_id": "ex-2", "revision": 2}
+    ]
+  },
+  {
+    "kind": "candidate",
+    "candidate_id": "cand-b-b",
+    "conversation_id": "lesson-b",
+    "turn_id": "02",
+    "task_id": "reading-lesson-b",
+    "label": "候选B",
+    "text": "按课后第2题把结尾改写为景物描写，不少于二百字。",
+    "source_refs": [
+      {"document": "reading-textbook", "fragment_id": "ex-2", "revision": 2}
+    ]
+  },
+  {
+    "kind": "candidate",
+    "candidate_id": "cand-b-c",
+    "conversation_id": "lesson-b",
+    "turn_id": "02",
+    "task_id": "reading-lesson-b",
+    "label": "候选C",
+    "text": "结合延伸阅读，比较两篇结尾的表达效果，写一则短评。",
+    "source_refs": [
+      {"document": "reading-textbook", "fragment_id": "ex-3", "revision": 1}
+    ]
+  },
+  {
+    "kind": "fragment",
+    "document": "reading-textbook",
+    "fragment_id": "ex-2",
+    "revision": 1,
+    "text": "课后第2题：把结尾改为景物描写，不少于一百五十字。",
+    "observed_at": "2026-11-10T09:00:00Z"
+  },
+  {
+    "kind": "fragment",
+    "document": "reading-textbook",
+    "fragment_id": "ex-2",
+    "revision": 2,
+    "text": "课后第2题：把结尾改为人物独白，不少于二百字。",
+    "observed_at": "2026-11-17T09:00:00Z"
+  },
+  {
+    "kind": "fragment",
+    "document": "reading-textbook",
+    "fragment_id": "ex-3",
+    "revision": 1,
+    "text": "延伸阅读：比较《故乡》与《社戏》结尾的表达效果。",
+    "observed_at": "2026-11-10T09:00:00Z"
+  },
+  {
+    "kind": "decision",
+    "decision_id": "dec-b-1",
+    "task_id": "reading-lesson-b",
+    "action": "modify",
+    "reviewer": "王老师",
+    "decided_at": "2026-11-19T09:05:00Z",
+    "candidate_id": "cand-b-b",
+    "turn_id": "02",
+    "turn_revision": 1,
+    "item_id": "hw-b-1",
+    "text": "提高层：按课后第2题把结尾改为景物描写，不少于一百五十字。",
+    "basis": [
+      {"document": "reading-textbook", "fragment_id": "ex-2", "revision": 1}
+    ],
+    "note": "按手边旧版教材原题修改"
+  },
+  {
+    "kind": "decision",
+    "decision_id": "dec-b-2",
+    "task_id": "reading-lesson-b",
+    "action": "reject",
+    "reviewer": "王老师",
+    "decided_at": "2026-11-19T09:06:00Z",
+    "candidate_id": "cand-b-a",
+    "note": "抄写类任务太机械"
+  },
+  {
+    "kind": "decision",
+    "decision_id": "dec-b-3",
+    "task_id": "reading-lesson-b",
+    "action": "adopt",
+    "reviewer": "李老师",
+    "decided_at": "2026-11-19T09:10:00Z",
+    "candidate_id": "cand-b-c",
+    "turn_id": "02",
+    "turn_revision": 1,
+    "item_id": "hw-b-2",
+    "basis": [
+      {"document": "reading-textbook", "fragment_id": "ex-3", "revision": 1}
+    ]
+  },
+  {
+    "kind": "item",
+    "item_id": "hw-b-1",
+    "task_id": "reading-lesson-b",
+    "revision": 1,
+    "text": "提高层：按课后第2题把结尾改为景物描写，不少于一百五十字。",
+    "decision_id": "dec-b-1",
+    "recorded_at": "2026-11-19T09:05:30Z"
+  },
+  {
+    "kind": "item",
+    "item_id": "hw-b-2",
+    "task_id": "reading-lesson-b",
+    "revision": 1,
+    "text": "结合延伸阅读，比较两篇结尾的表达效果，写一则短评。",
+    "decision_id": "dec-b-3",
+    "recorded_at": "2026-11-19T09:10:30Z"
+  },
+  {
+    "kind": "confirmation",
+    "confirmation_id": "conf-b-1",
+    "task_id": "reading-lesson-b",
+    "document": "reading-textbook",
+    "fragment_id": "ex-2",
+    "revision": 1,
+    "verdict": "confirmed",
+    "reviewer": "王老师",
+    "confirmed_at": "2026-11-19T09:04:00Z",
+    "note": "与手边旧版教材一致"
+  },
+  {
+    "kind": "confirmation",
+    "confirmation_id": "conf-c-1",
+    "task_id": "reading-lesson-c",
+    "document": "reading-textbook",
+    "fragment_id": "ex-3",
+    "revision": 1,
+    "verdict": "confirmed",
+    "reviewer": "李老师",
+    "confirmed_at": "2026-11-18T15:00:00Z",
+    "note": "在另一课程任务中核对过"
+  }
+]
